@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="my-3">
+                <button class="btn btn-info" (click)="addText()">Add Text</button>&nbsp;&nbsp;
+                <button class="btn btn-warning" (click)="addAlert()">Add Alert</button>&nbsp;&nbsp;
+                <button class="btn btn-secondary" click="addTable()">Add Table</button>
+            </div>
+            <div class="my-3" #textData>
+            <app-alert-modal [error]="error" *ngIf="error" (close)="error = null;"></app-alert-modal>                
+            </div>
+        </div>
+
+    </div>
+</div>
