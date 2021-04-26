@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   addText() {
-    console.log('sdsd')
+    console.log('Helloooo');
     const textComponentFactory = this.componentFactoryResolver.resolveComponentFactory(TextComponent)
     this.textData.createComponent(textComponentFactory)
     
